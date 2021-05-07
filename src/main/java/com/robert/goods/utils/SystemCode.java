@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 状态码
  */
-public class StateCode implements Serializable {
+public class SystemCode implements Serializable {
 
 
     private static final long serialVersionUID = -7686875877764432217L;

@@ -3,10 +3,6 @@ package com.robert.goods.redis.prefix;
 import com.robert.goods.redis.BasePrefix;
 
 /**
- * @Author soldier
- * @Date 20-4-24 下午3:36
- * @Email:583406411@qq.com
- * @Version 1.0
  * @Description:(秒杀)商品列表页面实现页面缓存的redis-key
  */
 public class GoodsHtmlKey extends BasePrefix {

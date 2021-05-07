@@ -1,12 +1,9 @@
 package com.robert.goods.redis.prefix;
 
-import com.soldier.redis.BasePrefix;
+
+import com.robert.goods.redis.BasePrefix;
 
 /**
- * @Author soldier
- * @Date 20-4-18 下午6:35
- * @Email:583406411@qq.com
- * @Version 1.0
  * @Description:对于秒杀用户的redis-key
  */
 public class MiaoshaUserKey extends BasePrefix {

@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.robert.goods</groupId>
-    <artifactId>BuyGoods</artifactId>
+    <artifactId>buy_goods</artifactId>
     <version>1.0-SNAPSHOT</version>
     <description>这是一个商品秒杀项目</description>
 

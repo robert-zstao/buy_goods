@@ -3,7 +3,6 @@ package com.robert.goods.controller;
 
 import com.robert.goods.bean.User;
 import com.robert.goods.bean.vo.Message;
-import com.robert.goods.bean.vo.PrototypeFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;

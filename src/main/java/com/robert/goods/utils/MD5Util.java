@@ -28,8 +28,5 @@ public class MD5Util {
 			return null;
 		}
 	}
-	public static void main(String[] args) {
-		System.out.println(System.getProperty("user.dir"));
-		System.out.println(MD5Util.md5("admin"));
-	}
+
 }

@@ -3,10 +3,6 @@ package com.robert.goods.redis.prefix;
 import com.robert.goods.redis.BasePrefix;
 
 /**
- * @Author soldier
- * @Date 20-4-25 上午11:09
- * @Email:583406411@qq.com
- * @Version 1.0
  * @Description:接口限流防刷的redis-key
  */
 public class AccessKey extends BasePrefix {

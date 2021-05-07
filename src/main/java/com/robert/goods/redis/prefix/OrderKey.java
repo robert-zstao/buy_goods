@@ -3,10 +3,6 @@ package com.robert.goods.redis.prefix;
 import com.robert.goods.redis.BasePrefix;
 
 /**
- * @Author soldier
- * @Date 20-4-18 上午8:23
- * @Email:583406411@qq.com
- * @Version 1.0
  * @Description:对于订单的redis-key
  */
 public class OrderKey extends BasePrefix {
