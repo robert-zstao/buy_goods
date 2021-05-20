@@ -12,14 +12,12 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-@Builder
 public class Message implements Cloneable{
-    private String code;
-    private Object data;
-    private String message;
-    private Long total;
-
-
+    private String code; //请求状态码
+    private Object data; //需要返回的数据
+    private String message; //需要返回的提示信息
+    private Long total; //数据列表的数量
+    //在toString方法中使用JSON格式
     @Override
     public String toString() {
         return "Message{" +
@@ -48,6 +46,12 @@ public class Message implements Cloneable{
     public static Message error() {
         return SystemCode.ERROR;
     }
+
+    public static Message error(Message message) {
+        return message;
+    }
+
+
     @Override
     public Object clone() throws CloneNotSupportedException {
         return super.clone();

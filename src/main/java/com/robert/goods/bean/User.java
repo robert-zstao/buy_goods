@@ -18,7 +18,7 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 5883208389725905601L;
 
-    private String id;
+    private int id;
 
     private String name;
 
@@ -30,5 +30,6 @@ public class User implements Serializable {
 
     private String phone;
 
+    private String createDate;
 
 }

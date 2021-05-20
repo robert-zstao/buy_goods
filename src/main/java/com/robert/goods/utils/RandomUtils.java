@@ -203,4 +203,9 @@ public class RandomUtils {
 		sb.append(strNum);
 		return sb.toString();
 	}
+
+
+	public static void main(String[] args) {
+		System.out.println(generateString(6));
+	}
 }

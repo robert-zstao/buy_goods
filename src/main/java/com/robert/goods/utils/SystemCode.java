@@ -31,6 +31,7 @@ public class SystemCode implements Serializable {
      * 登录返回消息
      */
     public final static String LOGIN_MSG_SUCCESS = "登录成功";
+    public final static String LOGIN_PHONE_NO_USER = "用户不存在！";
     public final static String LOGIN_MSG_NO_USER = "账号或密码错误";
     public final static String LOGIN_MSG_PERMISSION_DENIED = "账号没有登录权限";
     public final static String LOGIN_MSG_USER_DISABLE = "账号已禁用，请联系管理员";
@@ -39,6 +40,7 @@ public class SystemCode implements Serializable {
      * session key
      */
     public final static String SESSION_USER = "admin";
+    public final static String COOKIE_TOKEN = "goods_token";
 
     /**
      * 排序方式

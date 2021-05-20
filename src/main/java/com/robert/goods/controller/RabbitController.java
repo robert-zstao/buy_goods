@@ -1,6 +1,10 @@
 package com.robert.goods.controller;
 
+import com.robert.goods.bean.User;
 import com.robert.goods.bean.vo.Message;
+import com.robert.goods.rabbit.GoodMessage;
+import com.robert.goods.utils.JsonUtil;
+import com.robert.goods.utils.RandomUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +27,15 @@ public class RabbitController extends BaseController{
                 public void run() {
                     //获取当前线程的名称
                     String name=Thread.currentThread().getName();
-                    myProducer.sendMsg("这是第"+name+":个测试！！！");
+                    GoodMessage goodMessage = new GoodMessage();
+                    int count = RandomUtils.getRandom(100);
+                    System.out.println("商品i为："+count);
+                    goodMessage.setGoodsId(count);
+                    User user = new User();
+                    user.setId(count);
+                    goodMessage.setUser(user);
+
+                    myProducer.sendTopic(JsonUtil.beanToStr(goodMessage));
                 }
             }).start();
         }

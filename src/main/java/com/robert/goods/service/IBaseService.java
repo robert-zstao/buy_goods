@@ -12,11 +12,11 @@ import java.util.List;
 public interface IBaseService<T> {
 
     int addInfo(T t);
-    int delete(String id);
+    int delete(int id);
 
     int update(T t);
 
-    T findOne(String id);
+    T findOne(int id);
 
     T queryById(T t);
 
